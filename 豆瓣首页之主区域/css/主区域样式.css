@@ -1,0 +1,506 @@
+.hot-list {
+    line-height: 1.5;
+}
+
+.hot-list li {
+    margin-bottom: 15px;
+}
+
+.hot-list li .title {
+    font-size: 14px;
+}
+
+.hot-list li .desc {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.hot-list li .desc span {
+    margin-right: 4px;
+}
+
+.hot-main .left {
+    width: 350px;
+}
+
+.hot-main .left li {
+    width: 170px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.hot-main .left li .word {
+    color: #999;
+}
+
+/* 左边靠左，右边靠右，分散排列，最后一行不执行 */
+.hot-main .left ul {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.hot-main .left ul::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.hot-main .right {
+    width: 275px;
+    font-size: 12px;
+}
+
+.hot-main .right li {
+    margin-bottom: 12px;
+}
+
+.hot-main .right li .title {
+    color: #999;
+}
+
+.hot-main .right li .desc {
+    color: #666;
+}
+
+.time-main li {
+    width: 100px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.time-main li .words a {
+    color: #333;
+}
+
+.time-main li .words a:hover {
+    color: #fff;
+}
+
+.time-main li .words span {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.video-main .section-title a:hover {
+    background: initial;
+}
+
+.video-main li {
+    width: 250px;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.video-main li:nth-child(3n) {
+    margin: 0;
+}
+
+.video-main li .img {
+    position: relative;
+}
+
+.video-main li .img::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    line-height: 144px;
+    font-size: 35px;
+}
+
+.movie-area .right-menu-list li {
+    width: 48px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.order-movie-list {
+    font-size: 12px;
+}
+
+.order-movie-list li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 6px;
+}
+
+.order-movie-list li a {
+    margin-left: 5px;
+}
+
+.movie-area .item-list li {
+    width: 100px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.movie-area .item-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.movie-area .item-list li .words {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.movie-area .item-list li .words a {
+    display: inline-block;
+    max-width: 100%;            /* 最大宽度为100% */
+    white-space: nowrap;        /* 空白的处理方式是不换行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-area .func {
+    margin-top: 7px;
+}
+
+.movie-area .func .block-link {
+    background: #1c8bd0;
+    color: #fff;
+}
+
+.movie-area .func .block-link:hover {
+    background: #047fcb;
+}
+
+.group-area a {
+    color: #007982;
+}
+
+.group-area .group-name a:hover {
+    color: #fff;
+}
+
+.group-area .group-name a:active {
+    color: #fff;
+}
+
+/* 行块盒本来就是BFC，自动解决高度坍塌 */
+.group-area .main .item-list li {
+    width: 248px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.group-area .main .item-list li .img {
+    float: left;
+    width: 48px;
+    margin-right: 15px;
+}
+
+.group-area .main .item-list {
+    text-align: justify;
+}
+
+.group-area .main .item-list::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/* 不要文字环绕 */
+.group-area .main .item-list li .words {
+    overflow: hidden;
+}
+
+.group-area .main .item-list li .words span{
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.book-area a {
+    color: #494949;
+}
+
+.book-area .right-menu-list li {
+    margin-right: 10px;
+}
+
+.book-area .right-menu-list li span {
+    color: #999;
+}
+
+.book-area .group {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+}
+
+/* 最后一个.group盒子没有下边框 */
+.book-area .group:last-child{
+    border-bottom: none;
+}
+
+.book-area .item-list li{
+    width: 100px;
+    margin-right: 38px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.book-area .item-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.book-area .item-list li .words {
+    margin-top: 15px;
+}
+
+.book-area .item-list li .words span {
+    display: block;
+    color: #111;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.book-area .item-list li .func .block-link {
+    background: #999a95;
+    color: #fff;
+}
+
+.book-area .item-list li .func .block-link:hover {
+    background: #878882;
+}
+
+.music-area a {
+    color: #555d53;
+}
+
+.music-area .aside-left .title a {
+    color: #f38c00;
+}
+
+.music-area .aside-left .title a:hover {
+    color: #fff;
+}
+
+.music-area .aside-left .title a:active {
+    color: #fff;
+}
+
+.music-area .music-player-list li .number {
+    font-size: 12px;
+    color: #111;
+}
+
+.music-area .music-player-list li .player {
+    width: 240px;
+}
+
+.music-area .music-player-list li .player .img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.music-area .music-player-list li .player .img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.music-area .music-player-list li .player .img::before {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+}
+
+.music-area .music-player-list li .player .img:hover::before {
+    display: block;
+}
+
+.music-area .music-player-list li .player .words {
+    width: 180px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.music-area .music-player-list li .player .words span {
+    display: block;
+    color: #999;
+    line-height: 1.5;
+}
+
+.music-area .item-list li {
+    width: 130px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.music-area .item-list li .img {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.music-area .item-list li .words {
+    margin: 4px 0;
+}
+
+/* 并列类样式.item-list.hot-music中间不要空格 */
+.music-area .item-list.hot-music li .words {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.music-area .item-list.hot-music li .img {
+    position: relative;
+}
+
+.music-area .item-list.hot-music li .img::before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 33px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.doupin-area .aside-left .title a {
+    color: #1f9432;
+}
+
+.doupin-area .aside-left .title a:hover {
+    color: #fff;
+}
+
+.doupin-area .aside-right {
+    font-size: 14px;
+}
+
+.doupin-area .main .item-list li {
+    width: 240px;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.doupin-area .main .item-list li .words {
+    margin-top: 10px;
+}
+
+.doupin-area .main .item-list li .words span {
+    color: #E55457;
+}
+
+.city-area a {
+    color: #643;
+}
+
+.city-area a:hover {
+    color: #fff;
+}
+
+.city-area a:active {
+    color: #fff;
+}
+
+.city-area .aside-left .title a {
+    color: #ec5303;
+}
+
+.city-area .aside-left .title a:hover {
+    color: #fff;
+}
+
+.city-area .aside-left .title a:active {
+    color: #fff;
+}
+
+.city-area .item-list li {
+    width: 248px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.city-area .item-list li:nth-child(even) {
+    margin-right: 0;
+}
+
+.city-area .item-list li .img {
+    margin-right: 10px;
+}
+
+.city-area .item-list li .words {
+    overflow: hidden;
+}
+
+.city-area .item-list li .words a {
+    font-size: 13px;
+}
+
+.city-area .item-list li .words span {
+    font-size: 12px;
+    display: block;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* 个人 */
+.footer-area {
+    border-top: 1px dashed #dcdcdc;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer-area span {
+    color: #999;
+}
+
+.footer-area .footer-left {
+    margin-top: 15px;
+}
+
+.footer-area .footer-left .line4 img {
+    display: inline-block;
+    height: 16px;
+    vertical-align: text-top;
+}
+
+.footer-area .footer-left .line5 img {
+    display: inline-block;
+    width: 15px;
+    vertical-align: middle;
+}
+
+.footer-area .footer-right {
+    margin-top: 15px;
+}
+
+.footer-area .footer-right .list li {
+    margin-left: 5px;
+}
+
+.footer-area .footer-right .adv {
+    margin-top: 20px;
+}
+
+.footer-area .footer-right .adv img {
+    display: block;
+    width: 150px;
+}

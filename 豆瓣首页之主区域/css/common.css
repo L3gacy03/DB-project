@@ -1,0 +1,277 @@
+/* 多页面共享的CSS代码 */
+@import "//at.alicdn.com/t/font_1493854_ueva7wbfnd8.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 2;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #37a;
+}
+
+a:hover {
+    background: #37a;
+    color: #fff;
+}
+
+a:active {
+    background: #f93;
+    color: #fff;
+}
+
+ul {
+    word-break: break-all;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 35px 0;
+}
+
+.section:nth-child(2n-1) {
+    background: #f7f7f7;
+}
+
+.aside-left {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.aside-right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+.main {
+    /* 创建BFC */
+    overflow: hidden;
+}
+
+.adv img {
+    width: 100%;
+    display: block;
+}
+
+.section-title {
+    margin: 12px 0;
+}
+
+.section-title .title {
+    display: inline;
+    color: #072;
+    font-size: 15px;
+}
+
+.section-title .title::after {
+    content: " · · · · · ·";
+}
+
+.section-title .link {
+    font-size: 12px;
+}
+
+.section-title .link::before {
+    content: "(";
+}
+
+.section-title .link::after {
+    content: ")";
+}
+
+.adv-tag::after {
+    content: "广告";
+    color: #c9c9c9;
+    font-size: 13px;
+}
+
+.aside-left .title {
+    font-size: 24px;
+}
+
+.dark-color {
+    color: #494949;
+}
+
+.item-list li {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.item-list li .img img {
+    width: 100%;
+    display: block;
+}
+
+.color999 {
+    color: #999;
+}
+
+.left-menu {
+    font-size: 14px;
+}
+
+.left-menu a.new {
+    position: relative;
+}
+
+.left-menu a.new::after {
+    content: "";
+    background: url("../img/new_menu.gif") no-repeat;
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.right-menu-list {
+font-size: 12px;
+}
+
+.right-menu-list li {
+    float: left;
+}
+
+.star .number {
+    font-size: 12px;
+    margin-left: 7px;
+    color: #e09015;
+}
+
+.star-bg {
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background: url("../img/star-bg.png") no-repeat left top/100%;
+}
+
+.star50 {
+    background-position: 0 0;
+}
+
+.star45 {
+    background-position: 0 -11px;
+}
+
+.star40 {
+    background-position: 0 -22px;
+}
+
+.star35 {
+    background-position: 0 -33px;
+}
+
+.star30 {
+    background-position: 0 -44px;
+}
+
+.star25 {
+    background-position: 0 -55px;
+}
+
+.star20 {
+    background-position: 0 -66px;
+}
+
+.star15 {
+    background-position: 0 -77px;
+}
+
+.star10 {
+    background-position: 0 -88px;
+}
+
+.star05 {
+    background-position: 0 -99px;
+}
+
+.star00 {
+    background-position: 0 -101px;
+}
+
+.block-link {
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.menu-adv {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.app-icon-1 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/app_icons.jpg") no-repeat;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+}
+
+.app-icon-6 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/app_icons.jpg") no-repeat;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+    background-position: -250px 0px;
+}
+
+.app-icon-2 {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/app_icons.jpg") no-repeat;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+    background-position: -50px 0px;
+}
+
+.group-name a {
+    color: #333;
+    font-size: 14px;
+}
+
+.group-name a::after {
+    content: "»";
+}
+
+.group .right-menu-list li {
+    margin-right: 10px;
+}
