@@ -1,0 +1,111 @@
+@import "//at.alicdn.com/t/font_1493854_g5ahyy2ajzv.css";
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header {
+    height: 90px;
+}
+
+.header .container {
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.header .container .logo {
+    text-align: center;
+}
+
+.header .container .logo a {
+    background: url("../img/logo_db.png") no-repeat left top/100%;
+    display: block;
+    width: 154px;
+    height: 60px;
+}
+
+.header .container .logo a span {
+    display: none;
+}
+
+.header .container .search {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 30px;
+    width: 265px;
+    position: relative;
+}
+
+.header .container .search input {
+    width: 250px;
+    font-size: 13px;
+}
+
+.header .container .search input::placeholder {
+    color: #ccc;
+}
+
+.header .container .search .iconfont {
+    color: rgb(197, 194, 194);
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+.header .container .menu a {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: url("../img/anony_nav_logo.png") no-repeat left top/463px 20px;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+
+.header .container .menu .menu_read {
+    background-position: 0 0;
+}
+
+.header .container .menu .menu_movie {
+    background-position: -60px 0;
+}
+
+.header .container .menu .menu_music {
+    background-position: -120px 0;
+}
+
+.header .container .menu .menu_group {
+    background-position: -180px 0;
+}
+
+.header .container .menu .menu_city {
+    background-position: -240px 0;
+}
+
+.header .container .menu .menu_fm {
+    background-position: -300px 0;
+}
+
+.header .container .menu .menu_time {
+    background-position: -360px 0;
+}
+
+.header .container .menu .menu_DP {
+    background-position: -420px 0;
+    width: 44px;
+}
+
+
+

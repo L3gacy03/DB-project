@@ -1,0 +1,258 @@
+@import "./common.css";
+@import "./reset.css";
+@import "//at.alicdn.com/t/font_1493854_cwgq8lzjnna.css";
+
+.reg {
+    margin-top: 90px;
+    width: 100%;
+    height: 300px;
+    background: #edf4ed;
+    line-height: 2;
+}
+
+.reg .wrapper {
+    position: relative;
+}
+
+.reg .wrapper .bacground{
+    width: 772px;
+    height: 303px;
+    background: url("../img/bac.jpg") no-repeat left top/90%;
+    margin-left: 65px;
+}
+
+.reg .wrapper .app {
+    left: -120px;
+    top: 0;
+}
+
+.reg .wrapper .app .app_title {
+    font-size: 25px;
+    margin-top: 84px;
+}
+
+.reg .wrapper .app .app_title span {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.reg .wrapper .app {
+    position: relative;
+}
+
+.reg .wrapper .app>a {
+    display: block;
+    background: #00B51D;
+    color: #fff;
+    margin-top: 10px;
+    width: 115px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.reg .wrapper .app .app_qr {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+    position: absolute;
+    right: -35px;
+    top: 145px;
+}
+
+.reg .wrapper .app .app_qr img {
+    width: 100%;
+    height: 100%;
+}
+
+.reg .login {
+    height: 303px;
+    width: 300px;
+    margin-left: -54px;
+    padding: 30px 10px 10px;
+    position: relative;
+}
+
+.reg .login .qr {
+    width: 30px;
+    height: 30px;
+    background: url("../img/qr.png") no-repeat left top/100%;
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.reg .login .qr-pointer {
+    width: 70px;
+    height: 25px;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    color: #9b9b9b;
+    background: #f5faf9;
+    border: 1px solid rgba(66,189,86,.3);
+    border-radius: 3px;
+    position: absolute;
+    top: 11px;
+    right: 46px;
+}
+
+/* 当鼠标移上去时出现 */
+.reg .login .qr:hover+.qr-pointer {
+    display: block;
+}
+
+.reg .login .top li {
+    width: 140px;
+    color: #9b9b9b;
+    font-weight: 400;
+    text-align: center;
+    font-size: 13px;
+}
+
+.reg .login .top .select {
+    width: 140px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+.reg .login .bottom {
+    width: 280px;
+    height: 36px;
+}
+
+.reg .login .bottom .deal {
+    font-size: 12px;
+    margin: 5px 0;
+    color: #9b9b9b;
+}
+
+
+.reg .login .bottom .deal a {
+    display: inline-block;
+    color: #41ac52;
+}
+
+.reg .login .bottom .ip {
+    position: relative;
+    padding: 2px 0;
+    cursor: pointer;
+}
+
+.reg .login .bottom .ip .iarea {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    border-right: 1px solid;
+    border-color: rgba(0,0,0,.12);
+    padding-right: 15px;
+    font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    height: 22px;
+}
+
+.reg .login .bottom .ip input[type="text"] {
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    color: #333;
+    height: 36px;
+    border-radius: 3px;
+    padding-left: 60px;
+}
+
+.reg .login .bottom .ip input::placeholder {
+    padding-left: 2px;
+    font-size: 13px;
+}
+
+.reg .login .bottom .code input[type="text"]{
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    color: #333;
+    height: 36px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 8px;
+}
+
+.reg .login .bottom .code input::placeholder {
+    font-size: 13px;
+}
+
+.reg .login .bottom .code {
+    position: relative;
+}
+
+.reg .login .bottom .code a {
+    color: #41ac52;
+    font-size: 13px;
+    position: absolute;
+    left: 205px;
+    top: 11px;
+}
+
+.reg .login .bottom .in {
+    text-align: center;
+}
+
+.reg .login .bottom .in>a {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgba(66,189,86,.5);
+    cursor: no-drop;
+}
+
+.reg .login .bottom .auto {
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.reg .login .bottom .auto .nocode {
+    color: #41ac52;
+    font-size: 13px;
+}
+
+.reg .login .bottom .other {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border-top: 1px solid #ddd;
+    line-height: 35px;
+}
+
+.reg .login .bottom .other span {
+    font-size: 11px;
+    color: #9b9b9b;
+    display: inline-block;
+}
+
+.reg .login .bottom .other .iconfont {
+    margin: 0 0 0 12px;
+    cursor: pointer;
+}
+
+.reg .login .bottom .other .iconweixin {
+    color: rgb(72, 187, 110);
+    font-size: 22px;
+}
+
+.reg .login .bottom .other .iconweibo {
+    color: rgb(219, 126, 126);
+    font-size: 22px;
+}
