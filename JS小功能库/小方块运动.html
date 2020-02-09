@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button
+        style="width: 100px;height: 50px;background: linear-gradient(to left, #999, #000, #432, #fcc);position: fixed;right: 0;top: 50%;text-align: center;line-height: 50px;color: #fff;font-size: 25px;font-family: arial;">加速</button>
+    <script>
+        // 键盘控制小方块运动
+        var btn = document.getElementsByTagName('button')[0];
+        var div = document.createElement('div');    // 创建div
+        document.body.appendChild(div);
+        div.style.width = "100px";
+        div.style.height = "100px";
+        div.style.backgroundColor = "red";
+        div.style.position = "absolute";
+        div.style.left = "0";
+        div.style.top = "0";
+        var speed = 5;
+        btn.onclick = function () {
+            speed ++;
+        }
+        document.onkeydown = function (e) {
+            switch (e.which) {
+                case 38:
+                    div.style.top = parseInt(div.style.top) - speed + "px";
+                    break;
+                case 40:
+                    div.style.top = parseInt(div.style.top) + speed + "px";
+                    break;
+                case 37:
+                    div.style.left = parseInt(div.style.left) - speed + "px";
+                    break;
+                case 39:
+                    div.style.left = parseInt(div.style.left) + speed + "px";
+                    break;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

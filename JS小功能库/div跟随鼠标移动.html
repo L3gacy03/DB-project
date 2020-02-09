@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 开启box1的绝对定位 */
+            position: absolute;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            // 使div跟随鼠标移动
+            // 获取box1
+            var box1 = document.getElementById("box1");
+            // 给box1绑定范围太小，给document绑定
+            document.onmousemove = function (event) {
+                // 解决兼容性问题
+                // event = event || window.event;
+
+                // 解决IE8不兼容问题
+                // 获取滚动条滚动的距离
+                /*
+                    chrome认为浏览器的滚动条是body的，可以通过body.scrollTop来获取
+                    火狐等浏览器认为浏览器的滚动条是html的
+                */
+                // var st = document.scrollTop;
+                // var st = document.documentElement.scrollTop;
+                var st = document.body.scrollTop || document.documentElement.scrollTop;
+                var sl = document.body.scrollLeft || document.documentElement.scrollLeft;
+
+                // 获取鼠标的坐标,水平坐标和垂直坐标
+                // clientX和clientY相对于可视窗口的坐标
+                var left = event.clientX;
+                var top = event.clientY;
+                // pageX和pageY可以获取鼠标相对于当前页面的坐标，在IE8中不支持
+                // var left = event.pageX;
+                // var top = event.pageY;
+
+                // 设置div的偏移量：鼠标的位置在哪里，div的偏移量就是哪里
+                // div的偏移量相对于整个页面
+                box1.style.left = left + sl + "px";
+                box1.style.top = top + st + "px";
+            }
+        }
+    </script>
+</head>
+<body style="height: 1000px;width: 2000px;">
+    <div id="box1"></div>
+</body>
+</html>

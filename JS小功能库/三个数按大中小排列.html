@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 由键盘输入三个整数分别存入变量num1,num2,num3
+        // 对他们进行排序，并且从小到大输出
+        var max, mid, mix;
+        var num1 = parseInt(prompt('输入整数1'));
+        var num2 = parseInt(prompt('输入整数2'));
+        var num3 = parseInt(prompt('输入整数3'));
+        if (num1 > num2) {
+            if (num1 > num3) {
+                max = num1;
+                if (num2 > num3) {
+                    mid = num2;
+                } else {// num2 < num3
+                    mix = num3;
+                }
+            } else {// num1 < num3
+                max = num3;
+                mid = num1;
+                mix = num2;
+            }
+        } else {// num1 < num2
+            if (num2 > num3) {
+                max = num2;
+                if (num1 > num3) {
+                    mid = num1;
+                    mix = num3;
+                }
+            } else {// num2 < num3
+                max = num3;
+                mid = num2;
+                mix = num1;
+            }
+        }
+        alert(max + "," + mid + "," + mix);
+    </script>
+</body>
+
+</html>
